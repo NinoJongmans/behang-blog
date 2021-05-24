@@ -1,0 +1,20 @@
+{% extends 'layouts/default.njk' %}
+{% from "partials/card.njk" import card %}
+
+{% set title = Categorieën %}
+
+{% block content %}
+    <header class="tag-header">
+        <h1>{{ tag.name }}</h1>
+        <p>{{ content | safe }}</p>
+    </header>
+    <section class="post-feed">
+        {% if tag.posts %}
+            {% for post in tag.posts %}
+                {{ card(post) }}
+            {% endfor %}
+        {% else %}
+            <p>No posts to be found</p>
+        {% endif %}
+    </section>
+{% endblock %}

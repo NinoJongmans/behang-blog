@@ -1,16 +1,47 @@
 <footer class="site-foot">
     <div class="site-foot-nav container">
         <div class="site-foot-nav-left">
+            <img src="https://www.behang.nl/img/behang-logo-1569403155.jpg" />
+            <p>Behang.nl staat garant voor 3 belangrijke punten; kwaliteit service en duurzaamheid! Neem gerust een kijkje.</p>
+        </div>
+        <div class="site-foot-nav-left-two">
+            <h5>BLOG</h5>
+            <ul>
+                <li><a href="/alle-berichten">Alle berichten</a></li>
+                <li><a href="/alle-berichten">Alle categoriën</a></li>
+                <li><a href="/privact">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="site-foot-nav-left-three">
+            <h5>MENU</h5>
+            <ul>
+                <li><a href="https://www.behang.nl/">Home</a></li>
+                <li><a href="https://www.behang.nl/behang/">Behang</a></li>
+                <li><a href="https://www.behang.nl/fotobehang">Fotobehang</a></li>
+                <li><a href="https://behang.nl/alle-merken">Merken</a></li>
+                <li><a href="https://www.behang.nl/nieuwe-producten">Nieuwe designs</a></li>
+                <li><a href="https://www.behang.nl/accessoires/">Accessoires</a></li>
+            </ul>
+        </div>
+        <div class="site-foot-nav-left-four">
+            <h5>INFORMATIE</h5>
+            <ul>
+                <li><a href="https://www.behang.nl/content/levering.html">Verzenden & Retouren</a></li>
+                <li><a href="https://www.behang.nl/content/algemene-voorwaarden.html">Algemene voorwaarden</a></li>
+                <li><a href="https://www.behang.nl/content/privacy-voorwaarden.html">Privacy voorwaarden</a></li>
+                <li><a href="https://www.behang.nl/content/over-ons.html">Over ons</a></li>
+                <li><a href="https://www.behang.nl/contact">Contacteer ons</a></li>
+            </ul>
+        </div>
+        <div class="site-foot-nav-right">
+            <h5>CONTACT INFORMATIE</h5>
+            <p>Wilt u meer informatie? Dat kan! Neem contact met ons op 
+            via klantenservice@behang.nl of bel met ons op: 0851304469</p>
+        </div>
+    </div>
+    <div class="site-foot-bottom">
+        <div class="container">
             &copy; 2021 – Behang.nl
         </div>
-        {% if collections.docs %}
-            <div class="site-foot-nav-right">
-                {% for doc in collections.docs %}
-                    <a {% if page.url == doc.url %}aria-current="page"{% endif %}  class="site-foot-nav-item" href="{{ doc.url }}">
-                        {{ doc.meta_title if doc.meta_title else doc.title }}
-                    </a>
-                {% endfor %}
-            </div>
-        {% endif %}
     </div>
 </footer>
